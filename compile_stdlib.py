@@ -15,7 +15,6 @@ import py_compile
 import sys
 import tempfile
 
-
 IGNORE_MODULES = set([
     '__builtins__',
     '__init__',
@@ -120,11 +119,9 @@ def compile_stdlib(ouroboros, enabled_modules):
         fout.write(',\n    '.join(module_list))
         fout.write("\n}\n")
 
-
 def main():
     ouroboros, enabled_modules = parse_args()
     compile_stdlib(ouroboros, enabled_modules)
-
 
 if __name__ == '__main__':
     main()

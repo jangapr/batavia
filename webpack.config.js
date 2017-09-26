@@ -1,8 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
-
 var cachingDisabled = process.env.DISABLE_WEBPACK_CACHE !== undefined
-
 var javascriptLoaders = [{ loader: 'cache-loader' }, { loader: 'babel-loader' }]
 
 if (cachingDisabled) {

@@ -3,6 +3,7 @@ import unittest
 from .utils import adjust, JSCleaner, PYCleaner, TranspileTestCase
 
 
+# testcase
 class AdjustTests(unittest.TestCase):
     def assertEqualOutput(self, actual, expected):
         self.assertEqual(adjust(actual), adjust(expected))

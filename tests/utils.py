@@ -382,7 +382,7 @@ class PYCleaner:
 
         return out
 
-
+# Function definition normalize
 def _normalize(value):
     """
     ||| -- lines starting with this pattern will be `eval`uated and compared as

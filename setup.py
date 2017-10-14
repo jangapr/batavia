@@ -8,7 +8,7 @@ with io.open('README.rst', encoding='utf8') as readme:
 with io.open('package.json', encoding='utf8') as package:
     data = json.load(package)
 
-#setup batavia project    
+#setup batavia project and update version programing language   
 setup(
     name='batavia',
     version=data['version'].replace('dev.', 'dev'),

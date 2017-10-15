@@ -8,13 +8,13 @@ BigNumber.config({
 
 var batavia = {}
 
-// Set up the core interpreter.
+// Setup the core interpreter.
 batavia['core'] = require('./core')
 
-// Set up the core interpreter.
+// Setup the core interpreter.
 batavia['types'] = require('./types')
 
-// Set up the modules, including builtins and code from ouroboros
+// Setup the modules, including builtins and code from ouroboros
 batavia['builtins'] = require('./builtins')
 batavia['modules'] = require('./modules')
 batavia['stdlib'] = require('./stdlib')
